@@ -145,6 +145,7 @@ local function listenForKeypress(pZone, pDoctors)
 								TriggerEvent("srp-jobs:EMS:doctorpaged", hospital)
 							else
 								TriggerEvent("bed:checkin")
+								TriggerEvent("reviveFunction")
 							end
 							ClearPedTasksImmediately(PlayerPedId())
 						end
